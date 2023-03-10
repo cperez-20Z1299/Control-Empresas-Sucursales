@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "9dfdde90-b311-4fae-8401-394fa71d3bbd",
+		"name": "Control Empresas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DELETE sucursal",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA1Nzk4NWQxMDA1MzkzY2I2MWJhYmQiLCJpYXQiOjE2NzgwODA1MTQsImV4cCI6MTY3ODA5NDkxNH0.ywpOYGwAxBCd8O8GtU97ms7FTH8q-TyiGlS_PdAItnw",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/sucursal/eliminar/640576292ee6f93022a64110",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"sucursal",
+						"eliminar",
+						"640576292ee6f93022a64110"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EDIT sucursal",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA1Nzk4NWQxMDA1MzkzY2I2MWJhYmQiLCJpYXQiOjE2NzgwODA1MTQsImV4cCI6MTY3ODA5NDkxNH0.ywpOYGwAxBCd8O8GtU97ms7FTH8q-TyiGlS_PdAItnw",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"municipio\": \"San Miguel Petapa\",\r\n    \"direccion\": \"25calle, 15av, zona 21\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/sucursal/editar/640579c6d1005393cb61bac0",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"sucursal",
+						"editar",
+						"640579c6d1005393cb61bac0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET asignarSucursal",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA1Nzk4NWQxMDA1MzkzY2I2MWJhYmQiLCJpYXQiOjE2NzgwODA1MTQsImV4cCI6MTY3ODA5NDkxNH0.ywpOYGwAxBCd8O8GtU97ms7FTH8q-TyiGlS_PdAItnw",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/sucursal/asignar/640579c6d1005393cb61bac0",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"sucursal",
+						"asignar",
+						"640579c6d1005393cb61bac0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET mostrarSucursales",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA1Nzk4NWQxMDA1MzkzY2I2MWJhYmQiLCJpYXQiOjE2NzgwODA1MTQsImV4cCI6MTY3ODA5NDkxNH0.ywpOYGwAxBCd8O8GtU97ms7FTH8q-TyiGlS_PdAItnw",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/empresa/MySucursales",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"empresa",
+						"MySucursales"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"correo\": \"wallmart@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST agregarSucursal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA1NzdhNGJkNGQ1YzQ3MTM3NTkwOTciLCJpYXQiOjE2NzgwNzk5NjIsImV4cCI6MTY3ODA5NDM2Mn0.sUoDSNaLmz2VHVvQ4bkdsBveqh4en-a40u4i9LdXa10",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"municipio\": \"Villa Nueva\",\r\n    \"direccion\": \"11 calle, 12av, zona 4\",\r\n    \"usuario\": \"64057985d1005393cb61babd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/sucursal/agregar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"sucursal",
+						"agregar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST agregarEmpresa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Wallmart\",\r\n    \"correo\": \"wallmart@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"rol\": \"SUPERMERCADO\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/empresa/agregar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"empresa",
+						"agregar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
